@@ -1941,6 +1941,8 @@ free_colour_buffer(void)
     colseq_buf = NULL;
 }
 
+char *tgoto(const char *cap, int col, int row);
+
 /*
  * Handle outputting of a colour for prompts or zle.
  * colour is the numeric colour, 0 to 255 (or less if termcap
